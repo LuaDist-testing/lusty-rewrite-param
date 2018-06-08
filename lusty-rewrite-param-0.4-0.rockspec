@@ -1,16 +1,16 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "lusty-rewrite-param"
-version = "0.3-0"
+version = "0.4-0"
 -- LuaDist source
 source = {
-  tag = "0.3-0",
+  tag = "0.4-0",
   url = "git://github.com/LuaDist-testing/lusty-rewrite-param.git"
 }
 -- Original source
 -- source = {
---   url = "https://github.com/Olivine-Labs/lusty-rewrite-param/archive/v0.3.tar.gz",
---   dir = "lusty-rewrite-param-0.3"
+--   url = "https://github.com/Olivine-Labs/lusty-rewrite-param/archive/v0.4.tar.gz",
+--   dir = "lusty-rewrite-param-0.4"
 -- }
 description = {
   summary = "HTTP param rewrites for lusty.",
@@ -27,9 +27,8 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ["lusty-rewrite-param.rewrite.accept"]      = "src/rewrite/accept.lua",
+    ["lusty-rewrite-param.rewrite.header"]      = "src/rewrite/header.lua",
     ["lusty-rewrite-param.rewrite.method"]      = "src/rewrite/method.lua",
     ["lusty-rewrite-param.rewrite.body"]        = "src/rewrite/body.lua",
-    ["lusty-rewrite-param.rewrite.content-type"]= "src/rewrite/content-type.lua"
   }
 }
